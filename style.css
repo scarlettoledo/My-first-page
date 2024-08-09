@@ -1,0 +1,87 @@
+body {
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		background-color: rgba(128, 0, 32, 0.07);
+}
+
+.contenedor {
+	max-width: 1200px;
+	margin:2% auto 5%;
+	padding: 20px;
+	}
+figure {
+	flex:1 1 100%;
+	max-width: 100%;
+	}
+@media screen and (max-width: 480px) {
+	.galeria {
+		flex-direction: column;
+	}
+}
+h1{
+	color: rgb(128, 0, 32);
+	font-family: 'Georgia', serif;
+	text-align: center;
+	font-size: 2rem;
+}
+
+p{
+	color: black;
+	font-family: 'Verdana',sans-serif;
+	text-align: justify;
+	font-size: 1rem;
+}
+.centrado {
+	text-align: center;
+}
+h2{
+	color:rgb(128, 0, 32);
+	font-family: 'Georgia', serif;
+}
+h3{
+	color: rgb(128, 0, 30);
+	font-family: 'Georgia', serif;
+}
+h4{
+	color: rgb(128, 0, 30);
+	font-family: 'Georgia', serif;
+}
+h3,h4{
+	display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.galeria {
+	display: flex;
+	gap:10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+figure {
+	margin: 0;
+	padding: 0;
+	flex: 1 1 calc(33.333% - 20px);
+	max-width: calc(33.333% - 20px);
+	box-sizing: border-box;
+	text-align: center;
+}
+.responsive-img {
+	max-width: 100%;
+	height: auto;
+	margin:0 auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
